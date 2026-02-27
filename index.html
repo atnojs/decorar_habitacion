@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorar Estancia</title>
+    
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="https://atnojs.es/iconos/favicon1.ico" type="image/x-icon" />
+    
+    <!-- Tu CSS actualizado -->
+    <link rel="stylesheet" href="app.css">
+    
+    <!-- Configuración de Tailwind para que no interfiera con tus estilos -->
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+    
+    <style>
+        /* Pequeño ajuste para asegurar que Tailwind no rompa tus estilos */
+        .bg-white.rounded-xl {
+            background: var(--card-bg) !important;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Tu JavaScript actualizado -->
+    <script type="text/babel" data-presets="env,react" src="app.js"></script>
+</body>
+</html>
