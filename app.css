@@ -72,7 +72,8 @@ h3,
 }
 
 .app-hero-subtitle {
-  font-size: clamp(1.05rem, 2.1vw, 1.35rem) !important;
+  font-size: clamp(0.95rem, 1.8vw, 1.18rem) !important;
+  line-height: 1.35;
   text-align: center;
   max-width: 860px;
   margin: 0 auto;
