@@ -56,6 +56,47 @@ h3,
   background-clip: text;
 }
 
+.app-title {
+  font-size: clamp(1.45rem, 2.8vw, 2.35rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.6px;
+  text-align: center;
+  width: 100%;
+}
+
+.app-hero-title {
+  font-size: clamp(2rem, 4.8vw, 3.6rem) !important;
+  font-weight: 800 !important;
+  text-align: center;
+  line-height: 1.12;
+}
+
+.app-hero-subtitle {
+  font-size: clamp(1.05rem, 2.1vw, 1.35rem) !important;
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+  color: #dbe6ff !important;
+}
+
+.app-section-title {
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem) !important;
+  text-align: center;
+}
+
+.top-title-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 44px;
+}
+
+.room-header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
 /* ===== Layout utilitario ===== */
 .container {
   width: 100%;
