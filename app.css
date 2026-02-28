@@ -24,6 +24,9 @@ body {
   --card-bg: rgba(15, 23, 42, 0.3);
   --shadow-color: rgba(0, 0, 0, 0.35);
   --shadow-light: rgba(34, 211, 238, 0.25);
+  --neon-cyan: #2ee8ff;
+  --neon-pink: #ff4ecd;
+  --gradient-text: linear-gradient(90deg, var(--neon-cyan), var(--acc2), var(--neon-pink));
   --success: #22c55e;
   --warning: #d69e2e;
   --danger: #ef4444;
@@ -44,6 +47,13 @@ h2,
 h3,
 .title {
   font-family: 'Montserrat', sans-serif;
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* ===== Layout utilitario ===== */
