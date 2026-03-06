@@ -51,7 +51,7 @@ if (!is_array($req)) {
 
 // 3) Configurar Modelo y Endpoint
 // Recibimos el modelo desde el JS (será flash para texto o gemini-3 para imágenes)
-$model = $req['model'] ?? 'gemini-2.5-flash-image';
+$model = $req['model'] ?? 'gemini-3.1-flash-image-preview';
 $action = $req['action'] ?? 'generate';
 
 // Endpoint estándar de Google Gemini
